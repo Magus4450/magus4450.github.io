@@ -9,17 +9,17 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Katmandu
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Sugam Karki # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: My blog # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Technical blog about anything AI & ML
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -28,21 +28,21 @@ url: "https://magus4450.github.io"
 github:
   username: magus4450 # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+# twitter:
+#   username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
-  links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+  name: Sugam Karki
+  email: sugamkarki4450@gmail.com # change to your email address
+  # links:
+  # The first element serves as the copyright owner's link
+  # - https://twitter.com/username # change to your Twitter homepage
+  # - https://github.com/username # change to your GitHub homepage
+  # Uncomment below to add more social links
+  # - https://www.facebook.com/username
+  # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://instagram.fktm9-2.fna.fbcdn.net/v/t51.2885-19/451410533_331584530023577_4163484942361599764_n.jpg?_nc_ht=instagram.fktm9-2.fna.fbcdn.net&_nc_cat=105&_nc_ohc=g2we4EjiHVgQ7kNvgFKPCzw&_nc_gid=749c5a8010cf4d37ae9df24c32c4e9aa&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYAPOuu-K_rF77PFTmLoZ3fS3XVKxg1zpMn9LtGWRbjCwA&oe=670ACA22&_nc_sid=7a9f4b
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

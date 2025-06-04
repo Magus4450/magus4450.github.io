@@ -116,7 +116,7 @@ $$ Q_{\pi}(s,a) = \mathbb{E}_{\pi}[G|s,a] = \mathbb{E}_{\pi}[\sum_{t=0}^{T} \gam
 - $Q$ is the same as the state-value function, but the rewards also depends on the action taken.
 
 ### Optimal Policies
-- The policy that when followed generated the maximum expected return is called the *optimal policy* and is denoted by $\pi^*$. The equivalent state-value function is denoted by $V_*(s)$ and the action-value function is denoted by $Q_*(s)$.
+- The policy that when followed generated the maximum expected return is called the *optimal policy* and is denoted by $\pi^{\*}$. The equivalent state-value function is denoted by $V_*(s)$ and the action-value function is denoted by $Q_{\*}(s)$.
 - The state value function and the state-action value function both represent the same thing at a different level of granularity.
 - Imagine you have good estimates for the expected values since you've run the simulation for a long time. You can then use these values to derive the optimal policy. Now, using the optimal policies, if you decide to get the values for $V$ and $Q$, you will get the same values. This is represented in mathematical terms as *Bellman optimality equation*.
 
@@ -153,7 +153,9 @@ $Returns(s, a) \leftarrow [\,]$, for all $s \in \mathcal{S}, a \in \mathcal{A}(s
             9. Append $G$ to $Returns(s, a)$  
             10. $Q(s, a) \leftarrow \text{average}(Returns(s, a))$  
 
-- $Step (1)$ starts by passing a policy. Most MC algorithms have built-in policies, but you can also pass your own. The policy, $\pi(a|s,Q_\pi(s,a))$, returns an action for a given state using the action-value function. 
+
+
+- $Step (1)$ starts by passing a policy. Most MC algorithms have built-in policies, but you can also pass your own. The policy, $\pi(a|s,Q_\pi(s,a))$, returns an action for a given state using the action-value function.
 - $Step (2)$ initializes the action-value function and creates a buffer for all the interaction with the environment.
 - $Step (4)$ generates a full episode trajectory by following the current policy. In this case, it uses a $\epsilon$-greedy policy.
 - $Step (6)$ iterates over every step in the episode in reverse. This is important because the agent chooses actions based on *future* rewards. This step starts at the end and iterate backward summing rewards as it goes. Eventually, it will end up at the first state, and then we have one prediction of the expected return.
